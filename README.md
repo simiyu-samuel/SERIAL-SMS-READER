@@ -22,7 +22,7 @@ From a connected modem in a PC, the script captures all incoming mpesa sms and s
 
    mysql-connector-python for MySQL database connection.
    re (Python standard library) for regular expression parsing.
-
+## Mysql table
 CREATE TABLE mpesa_transactions (
 transaction_id VARCHAR(255) PRIMARY KEY,
 amount DECIMAL(10, 2),
@@ -53,7 +53,7 @@ Each SMS message is processed to determine if it’s an M-Pesa transaction messa
 If the message matches the M-Pesa format, it parses details like transaction ID, amount, sender name, phone number, date, and time.
 The parsed data is then stored in the database.
 Duplicate transactions are avoided by checking if the transaction ID already exists in the database.
-Logging: The script logs each SMS message processed, including errors encountered. Logs are written to sms_reader.log and contain detailed information such as:
+Logging: The script logs each SMS message processed, including errors encountered. Logs are written to sms_processing.log and contain detailed information such as:
 
 Processing results (e.g., successful parse, failed parse).
 Database errors (e.g., if the database connection fails or a duplicate transaction is detected).
