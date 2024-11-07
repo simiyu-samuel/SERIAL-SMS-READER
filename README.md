@@ -57,3 +57,6 @@ Logging: The script logs each SMS message processed, including errors encountere
 
 Processing results (e.g., successful parse, failed parse).
 Database errors (e.g., if the database connection fails or a duplicate transaction is detected).
+
+
+***Made with Love by Samuel Simiyu****
