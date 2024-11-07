@@ -5,7 +5,7 @@ From a connected modem in a PC, the script captures all incoming mpesa sms and s
 
 ## Features
 
-- Reads SMS messages from a configured SMS source.
+- Reads SMS messages from a configured SMS source. (Source example is a modem with a sim card)
 - Parses M-Pesa transaction messages using regular expressions.
 - Filters out non-M-Pesa messages.
 - Stores parsed transaction data in a database, preventing duplicate entries.
